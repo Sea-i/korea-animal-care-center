@@ -76,10 +76,10 @@ ul, ol {
 }
 #logo {
     display : flex;
-    width : 100%;
     background : tan;
     justify-content : center;
     align-items : center;
+    width : 1440px;
 }
 #login {
     position: absolute;
