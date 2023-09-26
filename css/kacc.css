@@ -69,8 +69,12 @@ ul, ol {
     display : flex;
     flex-direction: column;
     align-items: center;
+    justify-content : center;
     padding-top : 20px;
     position: relative;
+}
+#logo {
+    display : block;
 }
 #login {
     position: absolute;
@@ -78,10 +82,6 @@ ul, ol {
     right : 40px;
     font-size : 12pt;
     color : #bbb;
-}
-#menu {
-    width:1440px;
-    margin : 0 auto;
 }
 #menu ul {
     width : 1440px;
