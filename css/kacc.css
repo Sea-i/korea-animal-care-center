@@ -79,11 +79,13 @@ ul, ol {
     font-size : 12pt;
     color : #bbb;
 }
+#menu {
+    width:1440px;
+}
 #menu ul {
     width : 1440px;
     display : flex;
     justify-content: center;
-    /* background: tan; */
     font-size : 1.3rem;
     margin : 20px 0;
     border-bottom: 1px solid;
