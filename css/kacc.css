@@ -72,9 +72,11 @@ ul, ol {
     justify-content : center;
     padding-top : 20px;
     position: relative;
+    text-align : center ;
 }
 #logo {
     display : block;
+    background : tan;
 }
 #login {
     position: absolute;
