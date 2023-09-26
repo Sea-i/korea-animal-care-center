@@ -87,6 +87,7 @@ ul, ol {
     right : 40px;
     font-size : 12pt;
     color : #bbb;
+    display : none;
 }
 #menu ul {
     width : 1440px;
