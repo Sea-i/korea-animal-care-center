@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ohsquareair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KNPSKkomi-Regular00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KNPSKkomi-Regular00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Noto Sans KR', sans-serif; ///google web font */
+/* default setting */
+* {
+    margin : 0;
+    padding : 0;
+    border : 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    font-family: 'Cafe24Ohsquareair';
+    font-size : 14pt;
+    color : #162037;
+}
+::selection {
+    background : #255198 ;
+    color : white;
+}
+a {
+    display : inline-block;
+    text-decoration: none;
+    color : #162037;
+}
+span {
+    display : inline-block;
+}
+img {
+    display : block;
+    max-width : 100%;
+}
+ul, ol {
+    list-style: none;
+}
+/* --------------------- */
+#layout {
+    max-width : 1440px;
+    margin : 0 auto;
+}
+#header {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top : 20px;
+    position: relative;
+}
+#login {
+    position: absolute;
+    top : 20px;
+    right : 40px;
+    font-size : 12pt;
+    color : #bbb;
+}
+#menu ul {
+    width : 1440px;
+    display : flex;
+    justify-content: center;
+    /* background: tan; */
+    font-size : 1.3rem;
+    margin : 20px 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+#menu ul li > a {
+    display : block;
+    padding : 10px 55px;
+    
+}
+#menu ul li > a:hover,
+#menu ul li > a.ent {
+    background: rgba(120,166,217,0.6);
+    color : white;
+}
+.sub-down {
+    position : relative;
+}
+.sub-menu {
+    position : absolute;
+    background: rgba(255,255,255,0.8);
+    width : 100%;
+    display : none;
+    z-index: 10;
+}
+.sub-menu a {
+    display : block;
+    font-size : 1.1rem;
+    padding : 10px 5px;
+    text-align: center;
+}
+.sub-menu a:hover,
+.sub-menu a.ent {
+    background: rgba(163,198,234,0.6);
+    color : white;
+}
+#slider {
+    width : 1440px;
+    overflow : hidden;
+}
+#slide {
+    display : flex;
+    width : calc( 1440px * 4 );
+    position: relative;
+}
+#slide a {
+    display : block;
+}
+#txtBanner {
+    width : 1440px;
+    height : 40px;
+    background: #78a6d9;
+    overflow : hidden;
+    font-family: 'GmarketSansMedium';
+    margin : 20px 0;
+}
+#txtSlide {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 160px;
+    position: relative;
+}
+#txtSlide li {
+    height : 40px;
+    padding-top : 6px;
+    font-size : 0.95rem;
+}
+#txtSlide li a {
+    display : flex;
+}
+#txtSlide .circle {
+    margin-right : 15px;
+    background: #255198;
+    padding : 3px 15px 1px;
+    color : white;
+    border-radius : 50px;
+}
+#quickBtn {
+    width : 1440px;
+    display : flex;
+    font-family: 'KNPSKkomi-Regular00';
+    align-items: center;
+    text-align: center;
+}
+#quickBtn a.qBtn {
+    width : 480px;
+    height : 100px;
+    padding-top : 23px;
+}
+#quickBtn a.qBtn h4 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+.qBtn:nth-child(1) { background: #e3f0fb; border-radius: 50px 0 0 50px;}
+.qBtn:nth-child(2) { background: #c7e0f6;}
+.qBtn:nth-child(3) { background: #e3f0fb; border-radius: 0 50px 50px 0;}
+
+.qBtn:hover, .qBtn.click {
+    background: #255198;
+    color : white;
+}
+hr:nth-of-type(1) {
+    width : 1440px;
+    border-top : 1px dashed rgba(22,32,55,0.3);
+    margin-top : 50px;
+}
+#careAnimal-thum {
+    width : 1440px;
+    height: 450px;
+    margin-top : 50px;
+}
+#careAnimal-thum .text {
+    width : 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom : 20px;
+}
+#careAnimal-thum .text  h2 {
+    font-size : 1.7rem;
+}
+#care-slider {
+    overflow : hidden;
+}
+#care-slide {
+    display : flex;
+    width : 4800px;
+    position: relative;
+    transition-timing-function: linear;
+}
+.care-slide-img > a {
+    display : block;
+    width : 320px;
+    padding : 10px 0;
+}
+.care-slide-img-size {
+    width : 300px;
+    height : 300px;
+    overflow : hidden;
+}
+.care-slide-img h4 {
+    width : 300px;
+    text-align: center;
+    padding : 10px 0;
+    font-size : 1.3rem;
+}
+hr:nth-of-type(2) {
+    width : 1440px;
+    border-top : 1px dashed rgba(22,32,55,0.3);
+    margin-bottom : 50px;
+}
+
+#adoption-thum {
+    width : 1440px;
+    height: 450px;
+    margin-top : 50px;
+}
+#adoption-thum .text {
+    width : 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom : 20px;
+}
+#adoption-thum .text  h2 {
+    font-size : 1.7rem;
+}
+#adop-slider {
+    overflow : hidden;
+}
+#adop-slide {
+    display : flex;
+    width : 3200px;
+    position: relative;
+    transition-timing-function: linear;
+}
+.adop-slide-img > a {
+    display : block;
+    width : 320px;
+    padding : 10px 0;
+}
+.adop-slide-img-size {
+    width : 300px;
+    height : 300px;
+    overflow : hidden;
+}
+.adop-slide-img h4 {
+    width : 300px;
+    text-align: center;
+    padding : 10px 0;
+    font-size : 1.3rem;
+}
+hr:nth-of-type(3) {
+    width : 1440px;
+    border-top : 1px dashed rgba(22,32,55,0.3);
+}
+#footer {
+    background: rgba(22,32,55,0.35);
+    width : 1440px;
+    height : 250px;
+    font-family: 'GmarketSansMedium';
+    position: relative;
+    padding : 40px;
+    /* margin-bottom : 100px; */
+}
+#footer span {
+    display : block;
+}
+#foot-txt  > div {
+    display : flex;
+    width : 1000px;
+    margin-bottom : 10px;
+    /* background: tan; */
+}
+#foot-txt > p {
+    margin-bottom : 10px;
+}
+#txt1 b { flex : 0.12;}
+#txt1 span:nth-of-type(1) { flex : 0.48; }
+#txt1 span:nth-of-type(2) { flex : 0.4; }
+
+#txt2 p {
+    margin-right : 10pt;
+}
+#sns {
+    position : absolute;
+    bottom : 35px;
+    right : 40px;
+    display : flex;
+}
+#sns a {
+    display: block;
+}
+#sns a img {
+    height : 45px;
+    margin-left : 10px;
+}
+#sea {
+    width : 1440px;
+    text-align: center;
+    padding : 10px 0;
+    color : white;
+    background: #6667aa;
+}
