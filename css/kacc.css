@@ -62,24 +62,18 @@ ul, ol {
 }
 /* --------------------- */
 #layout {
-    max-width : 1440px;
+    width : 1440px;
     margin : 0 auto;
+}
+#logo {
+    display : block;
 }
 #header {
     display : flex;
     flex-direction: column;
     align-items: center;
-    justify-content : center;
     padding-top : 20px;
     position: relative;
-    text-align : center ;
-}
-#logo {
-    display : flex;
-    background : tan;
-    justify-content : center;
-    align-items : center;
-    width : 1440px;
 }
 #login {
     position: absolute;
@@ -87,12 +81,12 @@ ul, ol {
     right : 40px;
     font-size : 12pt;
     color : #bbb;
-    display : none;
 }
 #menu ul {
     width : 1440px;
     display : flex;
     justify-content: center;
+    /* background: tan; */
     font-size : 1.3rem;
     margin : 20px 0;
     border-bottom: 1px solid;
