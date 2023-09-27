@@ -61,18 +61,56 @@ $(document).ready(function(){
         });
     }
 
-    // 보호중인 동물 왼쪽으로 천천히 슬라이드
-    // let careSlide = setInterval( careLeftSlide , 100);
-    // let imgW = 0;
-    // function careLeftSlide(){
-    //     $("#care-slide").stop().animate( { "left" : "-=20px"}, 80, "linear" , function(){
-    //         imgW = $("#care-slide").position().left;
-    //         if( imgW <= -2800 ){
-    //             $("#care-slide").append( $("#care-slide").children().first() );
-    //             $("#care-slide").css( "left" , imgW * (-1) );
-    //         }
-    //     });
-    // }
+    // 보호중인 동물 버튼 누르면 한칸씩 이동한다
+    const careLB = $("#careAnimal-thum button.left");
+    const careRB = $("#careAnimal-thum button.right");
+    const careSlide = $("#care-slide");
+    careLB.click(function(){
+        $("#careAnimal-thum button").removeClass("btn-ent");
+        $(this).addClass("btn-ent");
+        careSlide.stop().animate( { "left" : "-=320px"},100, function(){
+            careSlide.append( careSlide.children().first() );
+            careSlide.css( "left" , 0 );
+        });
+    });     
 
-    // 입양가족 천천히 슬라이드
-});
+    careRB.click(function(){
+        $("#careAnimal-thum button").removeClass("btn-ent");
+        $(this).addClass("btn-ent");
+        careSlide.stop().animate( {"left" : "+=320px"}, 100 ,function(){
+            careSlide.prepend( careSlide.children().last() );
+            careSlide.css( "left" , 0 );
+        });
+    });
+
+    $("#careAnimal-thum button").mouseleave(function(){
+        $("#careAnimal-thum button").removeClass("btn-ent");
+    });
+
+    //입양가족 버튼 누르면 한칸씩 이동한다
+    const adopLB = $("#adoption-thum button.left");
+    const adopRB = $("#adoption-thum button.right");
+    const adopSlide = $("#adop-slide");
+
+    adopLB.click(function(){
+        $("#adoption-thum button").removeClass("btn-ent");
+        $(this).addClass("btn-ent");
+        adopSlide.stop().animate( { "left" : "-=320px"},100, function(){
+            adopSlide.append( adopSlide.children().first() );
+            adopSlide.css( "left" , 0 );
+        });
+    });     
+
+    adopRB.click(function(){
+        $("adopption-thum button").removeClass("btn-ent");
+        $(this).addClass("btn-ent");
+        adopSlide.stop().animate( {"left" : "+=320px"}, 100 ,function(){
+            adopSlide.prepend( adopSlide.children().last() );
+            adopSlide.css( "left" , 0 );
+        });
+    });
+
+    $("#adoption-thum button").mouseleave(function(){
+        $("#adoption-thum button").removeClass("btn-ent");
+    });
+});//and All

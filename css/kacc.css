@@ -87,7 +87,6 @@ ul, ol {
     display : flex;
     justify-content: center;
     /* background: tan; */
-    font-size : 1.3rem;
     margin : 20px 0;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -95,7 +94,7 @@ ul, ol {
 #menu ul li > a {
     display : block;
     padding : 10px 55px;
-    
+    font-size : 1.3rem;
 }
 #menu ul li > a:hover,
 #menu ul li > a.ent {
@@ -114,7 +113,7 @@ ul, ol {
 }
 .sub-menu a {
     display : block;
-    font-size : 1.1rem;
+    font-size : 1.12rem;
     padding : 10px 5px;
     text-align: center;
 }
@@ -199,6 +198,7 @@ hr:nth-of-type(1) {
     width : 1440px;
     height: 450px;
     margin-top : 50px;
+    position : relative;
 }
 #careAnimal-thum .text {
     width : 1440px;
@@ -209,6 +209,28 @@ hr:nth-of-type(1) {
 #careAnimal-thum .text  h2 {
     font-size : 1.7rem;
 }
+#care-arrow {
+    width : 1440px;
+    height : 300px;
+    top : 68px;
+    display : flex;
+    justify-content : space-between;
+    position : absolute;
+    z-index : 10;
+}
+#care-arrow button {
+    width : 50px;
+    background: none;
+    padding : 0 5px;
+}
+#care-arrow button img {
+    width : 70%;
+}
+#care-arrow button:hover,
+#care-arrow button.btn-ent {
+    background: rgba(0,0,0,0.3);
+}
+
 #care-slider {
     overflow : hidden;
 }
@@ -244,6 +266,7 @@ hr:nth-of-type(2) {
     width : 1440px;
     height: 450px;
     margin-top : 50px;
+    position: relative;
 }
 #adoption-thum .text {
     width : 1440px;
@@ -253,6 +276,27 @@ hr:nth-of-type(2) {
 }
 #adoption-thum .text  h2 {
     font-size : 1.7rem;
+}
+#adop-arrow {
+    width : 1440px;
+    height : 300px;
+    top : 68px;
+    display : flex;
+    justify-content : space-between;
+    position : absolute;
+    z-index : 10;
+}
+#adop-arrow button {
+    width : 50px;
+    background: none;
+    padding : 0 5px;
+}
+#adop-arrow button img {
+    width : 70%;
+}
+#adop-arrow button:hover,
+#adop-arrow button.btn-ent {
+    background: rgba(0,0,0,0.3);
 }
 #adop-slider {
     overflow : hidden;
@@ -284,7 +328,7 @@ hr:nth-of-type(3) {
     border-top : 1px dashed rgba(22,32,55,0.3);
 }
 #footer {
-    background: rgba(22,32,55,0.35);
+    background: rgba(22,32,55,0.25);
     width : 1440px;
     height : 250px;
     font-family: 'GmarketSansMedium';
