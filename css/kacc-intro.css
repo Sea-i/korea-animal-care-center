@@ -55,7 +55,8 @@ body {
     position : relative;
     opacity : 0;
     transition : 0.5;
-    animation : blank 15s both;
+    animation : blank 3s both;
+    animation-delay : 2s;
 }
 @keyframes blank {
     to { opacity : 1; }
