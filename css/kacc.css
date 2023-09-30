@@ -98,8 +98,8 @@ ul, ol {
 }
 #menu ul li > a:hover,
 #menu ul li > a.ent {
-    background: rgba(120,166,217,0.6);
-    color : white;
+    color : rgb(120,166,217);
+    font-weight: bold;
 }
 .sub-down {
     position : relative;

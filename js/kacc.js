@@ -113,4 +113,5 @@ $(document).ready(function(){
     $("#adoption-thum button").mouseleave(function(){
         $("#adoption-thum button").removeClass("btn-ent");
     });
+    
 });//and All
