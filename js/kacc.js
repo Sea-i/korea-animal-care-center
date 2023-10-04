@@ -113,5 +113,15 @@ $(document).ready(function(){
     $("#adoption-thum button").mouseleave(function(){
         $("#adoption-thum button").removeClass("btn-ent");
     });
-    
+        
+    $("#enter-contact a:not(:last-child)").hover(
+        function(){
+            $("#enter-contact a").removeClass("ent");
+            $(this).addClass("ent");
+            $(this).children("img").attr("src","./img/speech-bubble-y.png");
+        },
+        function(){
+            $("#enter-contact a").removeClass("ent");
+            $(this).children("img").attr("src","./img/speech-bubble.png");
+        });
 });//and All
