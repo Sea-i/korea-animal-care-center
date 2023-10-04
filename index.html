@@ -15,21 +15,21 @@
 <body>
     <div id="layout">
         <header id="header">
-            <a href="./index.html" id="logo"><img src="./img/logo.png" alt="한국동물보육원연합회 로고"></a>
+            <a href="./index.html" id="logo" target="_parent"><img src="./img/logo.png" alt="한국동물보육원연합회 로고"></a>
             <nav id="menu">
                 <ul>
-                    <li><a href="./intro.html">소개</a></li>
+                    <li><a href="./intro.html" target="_parent">소개</a></li>
                     <li class="sub-down">
-                        <a href="#careanimal">보호동물</a>
+                        <a href="javascript:alert('현재 페이지는 작업 중입니다.')">보호동물</a>
                         <nav class="sub-menu">
                             <a href="#">착한 입양</a>
                         </nav><!--//.sub-menu -->
                     </li>
-                    <li><a href="#announcement">입소안내</a></li>
-                    <li><a href="#adoption">입양가족</a></li>
-                    <li><a href="#report">학대제보</a></li>
+                    <li><a href="./enter.html" target="_parent">입소안내</a></li>
+                    <li><a href="javascript:alert('현재 페이지는 작업 중입니다.')">입양가족</a></li>
+                    <li><a href="javascript:alert('현재 페이지는 작업 중입니다.')">학대제보</a></li>
                     <li class="sub-down">
-                        <a href="#benefit">제휴 및 혜택</a>
+                        <a href="./benefit.html" target="_parent">제휴 및 혜택</a>
                         <nav class="sub-menu">
                             <a href="#">반려동물호텔</a>
                             <a href="#">강아지 운동장</a>
@@ -39,10 +39,10 @@
                             <a href="#">카페</a>
                         </nav>
                     </li>
-                    <li><a href="#news">소식</a></li>
+                    <li><a href="javascript:alert('현재 페이지는 작업 중입니다.')">소식</a></li>
                 </ul>
             </nav><!--//#menu-->
-            <a href="#" id="login">로그인</a>
+            <a href="javascript:alert('현재 페이지는 작업 중입니다.')" id="login">로그인</a>
         </header><!--//#header -->
 
         <div id="slider">
@@ -268,35 +268,7 @@
 
         <hr>
 
-        <footer id="footer">
-            <div id="foot-txt">
-                <div id="txt1">
-                    <b>직영 보육원 :</b>
-                    <span>
-                        <p>서울특별시 중구 동호로 7길 45, 3층 (동물보육원)</p>
-                        <p>경기도 성남시 중원구 자혜로 3-1, 2층 (동물보육원)</p>
-                    </span>
-                    <span>
-                        <a href="tel:02-2233-2513">&#124; TEL : 02.2233.2513</a>
-                        <a href="tel:010-6281-8993">&#124; TEL : 010.6281.8993</a>
-                    </span>
-                </div><!--//#txt1-->
-                <div id="txt2">
-                    <p><b>주소 :</b>&nbsp;광주광역시 동구 준법로 12 &nbsp;&#124;</p>
-                    <p><b>본사 :</b>&nbsp;애니멀코퍼레이션 &nbsp;&#124;</p>
-                    <p><b>대표자 :</b>&nbsp;이태호</p>
-                </div><!--//#txt2-->
-                <p><b>사업자번호 :</b>&nbsp;865-87-02008</p>
-                <p><b>허가번호 :</b>&nbsp;제 3010000-037-2018-0001호</p>
-            </div><!--//#foot-txt -->
-            <div id="sns">
-                <a href="#"><img src="./img/blog.png" alt="한국동물보육원 블로그 바로가기"></a>
-                <a href="#"><img src="./img/youtube.png" alt="한국동물보육원 유튜브 바로가기"></a>
-                <a href="#"><img src="./img/instagram.png" alt="한국동물보육원 인스타그램 바로가기"></a>
-            </div>
-        </footer>
-
-        <p id="sea">made by seoha</p>
+        <iframe src="./footer.html" frameborder="0" id="i-footer"></iframe>
     </div><!--//#layout -->
 </body>
 </html>

@@ -65,7 +65,7 @@ body {
     height : 450px;
 }
 #busy-con .black-bg {
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.55);
     width : 350px;
     height : 450px;
     position : absolute;
@@ -91,7 +91,6 @@ body {
     background: url(../img/objective.jpg);
     width : 1440px;
     height : 672px;
-    /* margin-bottom : 20px; */
     display :flex;
     justify-content : center;
     align-items: center;
@@ -117,7 +116,7 @@ body {
 #history .his-txt {
     display : flex;
     font-family: 'GmarketSansMedium';
-    font-size : 0.83rem;
+    font-size : 0.8rem;
     justify-content: space-between;
     margin-bottom : 30px;
     color : white;
