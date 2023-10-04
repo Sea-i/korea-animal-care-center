@@ -21,6 +21,11 @@ body {
 #enter-intro .intro-txt {
     text-align: center;
     flex : 0.4;
+    animation : blank 3s both;
+}
+@keyframes blank {
+    0% { opacity : 0; }
+    100% { opacity : 1; }
 }
 .intro-txt h3 {
     font-size : 1.7rem;
@@ -39,7 +44,6 @@ body {
     width : 100%;
 }
 
-/* ----- */
 #enter-contact  {
     width : 1440px;
     height : 50px;
@@ -66,30 +70,40 @@ body {
     width : 30px;
     margin-left : 10px;
 }
-
 #enter-contact .yellow {
     background: #f7dd2b;
     color : #333;
+}
+#enter-contact a:not(:last-child):hover,
+#enter-contact a:not(:last-child).ent {
+    background: #3b1f06;
+    color : #f7dd2b;
+}
+#enter-contact a:last-child:hover,
+#enter-contact a:last-child.ent {
+    background : #a3c6ea;
+    color : #255198;
 }
 
 /* ----- */
 #enter-animal {
     width : 1440px;
-    margin : 70px 0 80px;
+    margin : 100px 0 100px;
 }
 #enter-animal h2 {
     text-align: center;
-    font-size : 1.7rem;
+    font-size : 2rem;
     letter-spacing: 8px;
     font-family: 'Cafe24Ohsquare';
 }
 #ea-txt {
-    width : 1000px;
-    margin : 10px auto 0;
-    height : 150px;
+    margin-top : 10px;
+    height : 180px;
     background: #78a6d9;
+    color : white;
     border-radius: 0 80px 0 0;
     display : flex;
+    font-size : 1.2rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -100,25 +114,21 @@ body {
     margin-top : 15px;
 }
 /* ----- */
-#free-enter {
-    width : 1440px;
-}
 #free-enter h2 {
     text-align: center;
-    font-size : 1.7rem;
+    font-size : 2rem;
     letter-spacing: 8px;
     font-family: 'Cafe24Ohsquare';
 }
 #free-enter p {
     text-align: center;
     margin-top : 3px;
-    font-size : 1.1rem;
+    font-size : 1.2rem;
 }
 #free-txt {
-    width : 1000px;
     margin : 20px auto 0;
     display : flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .fe-txt {
@@ -130,6 +140,10 @@ body {
     align-items: center;
     justify-content: center;
     position : relative;
+    margin-left : 50px;
+}
+.fe-txt:first-of-type {
+    margin-left : 0;
 }
 .fe-txt span {
     position: absolute;
@@ -157,8 +171,8 @@ body {
 }
 #enter-list h2 {
     text-align: center;
-    margin : 80px 0 15px;
-    font-size : 1.7rem;
+    margin : 100px 0 15px;
+    font-size : 2rem;
     letter-spacing: 8px;
     font-family: 'Cafe24Ohsquare';
 }
